@@ -1,0 +1,1028 @@
+
+/*configurações gerais do site*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}/*Reset*/
+
+/*paleta de cores 1
+#59161C #0D0305 #260606 #400B0B #731D1D
+*/
+body{
+  background-color: #59161C;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+html{
+  scroll-behavior: smooth;
+}/*para o scroll down*/
+
+.interface{
+  max-width: 1280px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+.titulo span {
+  color: #ffb237; /* Cor inicial, por exemplo, preto */
+}
+
+/*Cabeçalho*/
+
+
+header{
+  width: 100%;
+  padding: 10px 4%;
+  position:absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff5d;
+}
+
+header .logo2 img{
+  width: 200px;
+  align-items: center;
+}
+
+header > .interface{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  transition:.2s ;
+}
+
+header nav.menu-descktop  a:hover{
+  color: #731D1D;
+  transform: scale(1.05);
+}
+
+header nav ul{
+  list-style-type: none;
+  
+}
+
+header nav.menu-descktop ul li{
+  display: inline-block;
+  padding: 0 40px;
+}
+
+header .btn-contato{
+  padding: 40px;
+}
+
+.btn-contato button{
+  padding: 10px 60px;
+  font-size: 18px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #731d1d,#59161c,#260606 );
+  color: #ffffff;
+  border: 0px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.logo-principal button{
+  border: 0px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  transition: .2s;
+  cursor: pointer;
+  box-shadow: 0px 0px 8px #ffffff;
+
+}
+
+
+/*Topo do site*/
+
+h2.titulo{
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  
+}
+
+section.topo-do-site{
+  height: 100vh;
+  background-image: url('../imagem/logo-back.png');
+  background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+button:hover ,form .btn-enviar input:hover{
+  box-shadow: 0px 0px 8px  #260606 ;
+  transform: scale(1.05);
+}
+/*#06cefa*/
+
+.topo-do-site .interface{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+ 
+}
+
+.txt-topo-site h1{
+  color: #efe9e9 ;
+  max-width: 500px;
+  justify-content:baseline;
+  font-size: 40px;
+  line-height: 45px;
+}
+
+.txt-topo-site p{
+  margin-top: 30px;
+  color: #efe9e9;
+  max-width: 500px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.btn-contato{
+  margin-top: 20px;
+}
+
+section.topo-do-site .seta-baixo {
+  font-size: 45px;
+  position: absolute;
+  bottom: 20px; /* Ajuste conforme necessário */
+  left: 45%;
+  font-size: 45px;
+  color: white;
+  
+}
+
+section.topo-do-site .interface{
+  align-items: center;
+}
+
+
+
+
+
+.seta-baixo i{
+  margin-bottom: 50px;
+  transform: translatey(250%);
+  color:white;
+}
+
+#flutuar{
+  animation-name: flutuar2;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+
+
+
+@keyframes flutuar2{
+  form{
+    transform: translate3d(0, 0, 0);
+    
+  }
+  to{
+    transform: translate3d(0, -8px, 0);
+    
+
+  }
+}
+
+/*beneficios*/
+
+main nav ul{
+  list-style-type: none;
+}
+
+section.beneficios{
+  width:100%;
+  padding: 40px 4%;
+}
+
+section.beneficios .flex{
+  gap: 60px;
+  width: 100%;
+}
+
+section.beneficios .flex{
+  display:  flex;
+  
+}
+
+.txt-beneficios h1{
+  font-size: 40px;
+  color: white;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+.txt-beneficios{
+  margin-top: 0px ;
+}
+
+.list-beneficios {
+  color: white;
+  line-height: 40px;
+  align-items: center;
+}
+
+.list-beneficios i{
+  color: #ffb237;
+  font-size: 20px;
+}
+.img-beneficios{
+  text-align: center;
+  display: flex;
+}
+
+
+
+/*Sobre o curso*/
+
+section.sobre-o-curso{
+  background-color: #ffffff;
+  box-shadow: 0 0 40px 10px #ffc1c1 ;
+  padding: 40px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+section.sobre-o-curso .flex{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+
+
+section.sobre-o-curso .txt-sobre{
+  text-align: center;
+}
+
+section.sobre-o-curso .txt-sobre h2{
+  font-size: 40px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
+  color: #59161C;
+}
+
+.rule{
+  text-align: center;
+  margin: 30px auto; /* Margem superior e inferior de 30px, centralizado horizontalmente */
+  border: none; /* Remove o estilo padrão */
+  border-top: 2px solid #00b5ca; 
+  width: 80%; /* Largura relativa */
+  max-width: 600px;
+}
+
+
+section.sobre-o-curso .txt-sobre p{
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+  color: #454545;
+}
+
+
+/*Piares*/
+
+section.pilares{
+  padding: 40px 4%;
+  background-color: #541111;
+}
+
+section.pilares .flex{
+  justify-content: space-around;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+section.pilares .interface {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os elementos horizontalmente */
+}
+
+section.pilares .txt-pilares{
+  max-width: 305px;
+  text-align: center;
+  margin-top: 10px; /* Espaço entre a imagem e o texto */
+  padding: 0 10px; /* Adiciona algum padding para espaçamento interno */
+  align-self: flex-start;
+}
+
+.pilar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os itens verticalmente */
+  margin: 10px;
+  max-width: 300px; /* Ajuste conforme necessário */
+  min-height: 400px;
+}
+
+
+.img-pilares img{
+  width: 300px ;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  transition: .2s;
+  cursor: pointer;
+  border-radius: 40px;
+  position:relative;
+}
+
+
+section.pilares .img-pilares img :hover{
+  box-shadow: 0px 0px 8px  #005f74;
+  transform: scale(1.05);
+}
+
+.titulo-pilares h2{
+  font-size: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
+  color: #ffffff;
+}
+.txt-pilares p{
+  color: white;
+}
+
+/*Compromisso*/
+
+section.compromisso{
+  background-color: #ffd899;
+  padding: 80px 4%;
+}
+
+.txt-compromisso{
+  margin: 0 auto;
+  text-align: center;
+  font-size: 23px;
+  max-width: 1000px;
+}
+
+/*Terapia em Grupo*/
+
+/*Beneficos terapia*/
+
+section.beneficios-terapia{
+  width: 100%;
+  padding: 40px 4%;
+}
+
+section.beneficios-terapia .flex{
+  gap: 60px;
+  width: 100%;
+}
+
+section.beneficios-terapia .flex{
+  display:  flex;
+}
+
+.txt-beneficios-terapia h1{
+  font-size: 40px;
+  color: white;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+.txt-beneficios-terapia{
+ margin-top: 0px;
+}
+
+.list-beneficios {
+  color: white;
+  line-height: 40px;
+  align-items: center;
+}
+
+.list-beneficios i{
+  color: #ffd899;
+  font-size: 20px;
+}
+.img-beneficios{
+  text-align: center;
+  display: flex;
+}
+
+
+/*  sobre terapia em grupo*/
+
+section.sobre-a-terapia{
+  background-color: #ffffff;
+  box-shadow: 0 0 40px 10px #f5fcff ;
+  padding: 40px 4%;
+}
+
+section.sobre-a-terapia .flex{
+  display: inline;
+}
+
+
+
+
+
+section.sobre-a-terapia .txt-sobre-terapia{
+  text-align: center;
+}
+
+section.sobre-a-terapia .txt-sobre-terapia h2{
+  font-size: 40px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
+  color: #59161C;
+}
+
+.rule{
+  width: 450px;
+  text-align: center;
+  margin: 0 auto;
+  border: none; /* Remove o estilo padrão */
+  border-top: 2px solid #00b5ca; 
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+}
+
+
+section.sobre-a-terapia .txt-sobre-terapia p{
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+  color: #454545;
+}
+
+
+/*pilares terapia*/
+
+section.pilares-terapia{
+  padding: 40px 4%;
+  background-color: #59161C;
+}
+
+section.pilares-terapia .flex{
+  justify-content: space-around;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+section.pilares-terapia .interface {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os elementos horizontalmente */
+}
+
+section.pilares-terapia .txt-pilares{
+  max-width: 305px;
+  text-align: center;
+  margin-top: 10px; /* Espaço entre a imagem e o texto */
+  padding: 0 10px; /* Adiciona algum padding para espaçamento interno */
+  align-self: flex-start;
+}
+
+
+.pilar-item-terapia {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os itens verticalmente */
+  margin: 10px;
+  max-width: 300px; /* Ajuste conforme necessário */
+  min-height: 400px;
+}
+
+
+.img-pilares-terapia img{
+  width: 300px ;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  transition: .2s;
+  cursor: pointer;
+  border-radius: 40px;
+  position:relative;
+}
+
+
+section.pilares-terapia .img-pilares-terapia img :hover{
+  box-shadow: 0px 0px 8px  #005f74;
+  transform: scale(1.05);
+}
+
+.titulo-pilares{
+  font-size: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
+  color: #005f74;
+}
+
+/*vendas*/
+section.venda{
+  padding: 1px 4%;
+  background-image: url('../imagem/Vendas\ -\ João\ Paulo.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: auto;
+}
+
+section.venda .flex{
+  justify-content: space-around;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 40px 11%;
+}
+
+section.venda .interface {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os elementos horizontalmente */
+}
+
+section.venda .back-venda{
+  background-image: linear-gradient(to bottom, #fdf7d3, #fdf7d3);
+  border-radius: 20px ;
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+  box-sizing: border-box;
+  
+}
+
+.txt-venda{
+  text-align: center;
+  color: #601a1a;
+  font-weight: bold;
+}
+
+.txt-venda .combo h1{
+  font-size: 30px;
+}
+
+.txt-venda .list-beneficios{
+  text-align: left;
+  padding: 10px 4%;
+  margin: 5px;
+  max-width: 700px;
+  color: #601a1a;
+  font-weight: bold;
+}
+
+section.venda .btn-contato button{
+  background-image: linear-gradient(to bottom, #601a1a, #601a1a);
+  color: white;
+}
+
+section.venda .txt-venda h1{
+  font-size: 35px;
+}
+section.venda .txt-venda h2{
+  font-size: 25px;
+}
+
+section.venda .list-beneficios spam{
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+section.venda nav.list-beneficios{
+  margin: 35px;
+}
+
+section.venda .btn-contato{
+  margin-top: 40px;
+}
+
+section.venda .logo-venda img{
+  display: flex;
+  margin: 10px auto;
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+ 
+}
+
+/*sobre mim*/
+
+section.sobre-mim .flex{
+  display:  flex;
+  flex-direction: row;
+  margin-top: 20px ;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  
+}
+
+.txt-sobre-mim h1{
+  font-size: 40px;
+  color: white;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+.txt-sobre-mim{
+  margin-top: 80px ;
+  margin-left: 50px;
+  color: #fff;
+  flex: 1;
+}
+
+.img-sobre-mim{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 4px;
+  flex: 1;
+}
+
+section.sobre-mim .img-sobre-mim img{
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+}
+
+.txt-sobre-mim hr {
+  border: 0;
+  height: 1px;
+  background: yellow; /* Cor da linha */
+  margin: 20px 0; /* Espaçamento em cima e embaixo da linha */
+}
+
+@media (max-width: 768px) {
+  section.sobre-mim .flex {
+    flex-direction: column; /* Coloca os elementos em uma coluna */
+    align-items: center; /* Centraliza os elementos na coluna */
+  }
+
+  .txt-sobre-mim {
+    margin-top: 20px;
+    margin-left: 0;
+    text-align: center; /* Centraliza o texto em telas menores */
+  }
+
+  section.sobre-mim .img-sobre-mim img {
+    width: 80%; /* Ajusta a largura da imagem em telas menores */
+    max-width: 300px; /* Limita a largura máxima da imagem em telas menores */
+  }
+
+  .txt-sobre-mim h1 {
+    font-size: 32px; /* Reduz o tamanho da fonte em telas menores */
+  }
+
+  .txt-sobre-mim hr {
+    margin: 30px 0; /* Aumenta o espaçamento em telas menores */
+  }
+}
+
+
+/*perguntas*/
+
+section.perguntas{
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.perguntas .flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 960px; /* Largura máxima desejada */
+  min-width: 960px; /* Largura mínima para garantir que não encolha */
+}
+details {
+  display: block;
+  max-width: 960px; /*Largura da caixa*/
+  width: 100%;
+  margin: 10px 0;
+  background-color: #efefef;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/*Vai cor de fundo dos títulos*/
+summary {
+  display: block;
+  background: #601a1a;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+summary:after {
+  content: "+";
+  color: #fff;
+  float: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: -5px 5px 0 0;
+  padding: 0;
+  text-align: center;
+  width: 20px;
+}
+
+#linha p {
+  padding: 10px;
+  background-color: #efefef;
+}
+
+details[open] summary:after {
+  content: "-";
+  color: #ffffff;
+}
+@media (max-width: 1000px) {
+  details {
+    max-width: 900px; /* Detalhes ocupam 100% da largura disponível */
+  }
+}
+@media (max-width: 900px) {
+  details {
+    max-width: 800px; /* Detalhes ocupam 100% da largura disponível */
+  }
+}
+@media (max-width: 800px) {
+
+  section.topo-do-site{
+    height: 100vh;
+    background-image: url('../imagem/logo-back-mobile.png');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  details {
+    max-width: 400px; /* Detalhes ocupam 100% da largura disponível */
+  }
+}
+@media (max-width: 400px) {
+  section.topo-do-site{
+    height: 100vh;
+    background-image: url('../imagem/logo-back-mobile.png');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  details {
+    max-width: 380px; /* Detalhes ocupam 100% da largura disponível */
+  }
+}
+/*footer*/
+
+.titulo-perguntas{
+  color: #601a1a;
+}
+
+button:hover ,form .btn-enviar input:hover{
+  box-shadow: 0px 0px 8px #ffd899;
+  transform: scale(1.05);
+}
+
+.bnt-social button{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffd899;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 20px 5px;
+  transition: .2s;
+}
+
+footer{
+  padding: 1px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1d ;
+}
+
+footer .flex{
+  justify-content: space-between;
+}
+
+footer .line-footer{
+  padding: 20px 0;
+  
+}
+footer .flex{
+  flex-direction: column;
+}
+
+footer .line-footer{
+  text-align: center;
+}
+
+footer .logo-footer img{
+  width: 200px;
+}
+footer .line-footer p i{
+  color: #ffd899;
+  font-size: 22px;
+}
+
+footer .line-footer p a{
+  color: #fff;
+}
+/*botão wtt*/
+footer .logo-footer img{
+  width: 200px;
+}
+
+#div-fixa{
+  position: fixed;
+  bottom: 10px;
+  margin: 0 20px;
+  cursor: pointer;  
+  
+}
+#div-fixa img{
+  width: 50px;
+  height: 50px;
+}
+
+#div-fixa a .flex-itens{
+  display: flex;
+  align-items: center;
+}
+
+#div-fixa a .flex-itens span{
+  display: block;
+  font-weight: bold;
+  margin-left: 5px;
+
+
+}
+#div-fixa a{
+  text-decoration: none;
+  
+}
+
+.flutuar{
+  animation-name: flutuar2;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+
+@keyframes flutuar2{
+  form{
+    transform: translate3d(0, 0, 0);
+    filter: brightness(100%);
+  }
+  to{
+    transform: translate3d(0, -8px, 0);
+    filter: brightness(140%);
+
+  }
+}
+
+header .logo{
+  display: none;
+}
+
+.direitos{
+  text-align: center;
+  color: #f4f4f4;
+}
+
+/*RESPONSIVIDADE*/
+
+/*Cabeçalho*/
+
+@media screen and (max-width: 1020px){
+
+.menu-descktop, header .btn-contato{
+  display: none;
+  padding: 0 40px;
+
+}
+
+header .interface{
+  max-height: 10px ;
+}
+
+.fundo {
+    background-image: url('../imagem/fundo.png');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 93vh;
+}
+
+section.beneficios .flex {
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  padding: 0 40px;
+}
+
+section.beneficios .img-beneficios {
+  margin-top: 0px;
+  padding-top: 0px;
+  
+}
+
+section.beneficios-terapia .flex{
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  padding: 0 40px;
+}
+
+section.beneficios .img-beneficios img{
+  width: 100%;
+}
+
+section.beneficios-terapia .img-beneficios-terapia img{
+  width: 100%;
+}
+
+header .logo2{
+  display: none;
+}
+
+header {
+  width: 100%;
+  padding: 60px 4%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff5d;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+header .logo {
+  text-align: center; /* Centraliza o conteúdo dentro do div */
+  display: flex; /* Transforma a div .logo em flexível */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+header .logo img {
+  width: 400px;
+  align-items: center;
+}
+
+
+
+
+}
+
+
+/*Paleta Azul
+
+cores: #005f74
+
+*/
